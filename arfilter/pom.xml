@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fi.vtt.nubomedia</groupId>
+  <artifactId>arfilter</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+  <name>arfilter</name>
+<description>For VTT's NUBOMEDIA project and related projects a Kurento client interface for utilizing arfilter Kurento module</description>
+<url>
+https://github.com/nubomedia-vtt/armodule
+</url>
+<licenses>
+<license>
+<name></name>
+<url>
+https://github.com/nubomedia-vtt/armodule/blob/master/License.md
+</url>
+</license>
+</licenses>
+<developers>
+<developer>
+<id>mylikera</id>
+<name>Markus Ylikerälä</name>
+<email>Markus.Ylikerala@vtt.fi</email>
+</developer>
+</developers>
+<scm>
+<connection>
+https://github.com/nubomedia-vtt/armodule.git
+</connection>
+<developerConnection>
+https://github.com/nubomedia-vtt/armodule.git
+</developerConnection>
+<url>
+https://github.com/nubomedia-vtt/armodule
+</url>
+</scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.kurento</groupId>
+      <artifactId>kurento-client</artifactId>
+      <version>[6.3.0,7.0.0-SNAPSHOT)</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.kurento</groupId>
+        <artifactId>kurento-maven-plugin</artifactId>
+        <version>2.0.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate-kurento-client</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
